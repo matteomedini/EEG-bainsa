@@ -1,0 +1,10 @@
+name: SSVEP CCA
+
+paradigms:
+  - FakeSSVEPParadigm
+
+pipeline:
+  - name: SSVEP_CCA
+    from: moabb.pipelines.classification
+    parameters:
+      n_harmonics: 3
